@@ -376,3 +376,101 @@ nav button:active {
     font-size: 64px;
   }
 }
+/* -------- Hero yeni bölümler -------- */
+
+.hero-badge{
+display:inline-block;
+padding:10px 18px;
+border-radius:999px;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(12px);
+font-weight:700;
+margin-bottom:20px;
+}
+
+.hero-actions{
+display:flex;
+gap:16px;
+flex-wrap:wrap;
+margin-top:10px;
+}
+
+.hero-actions button:last-child{
+background:white;
+color:#8b4dff;
+border:2px solid rgba(169,108,255,.25);
+}
+
+.hero-tags{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:40px;
+}
+
+.hero-tags span{
+padding:10px 18px;
+border-radius:999px;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(12px);
+font-weight:600;
+}
+
+/* -------- Mod kartları -------- */
+
+.modes-section{
+margin-top:70px;
+}
+
+.section-heading{
+text-align:center;
+margin-bottom:35px;
+}
+
+.section-heading p{
+color:#a96cff;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.section-heading h2{
+font-size:42px;
+margin:0;
+}
+
+.mode-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:24px;
+}
+
+.mode-card{
+padding:28px;
+border-radius:28px;
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(18px);
+transition:.25s;
+border:1px solid rgba(255,255,255,.7);
+}
+
+.mode-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 45px rgba(169,108,255,.18);
+}
+
+.mode-card span{
+font-size:42px;
+display:block;
+margin-bottom:18px;
+}
+
+.mode-card h3{
+margin-bottom:10px;
+}
+
+footer{
+text-align:center;
+padding:45px 0 20px;
+font-weight:700;
+color:#7a6b86;
+}

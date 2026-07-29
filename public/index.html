@@ -1,50 +1,170 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="MiMiAi — günlük yaşam, öğrenme, araştırma ve yaratıcılık için kişisel yapay zekâ asistanı."
+  />
+
   <title>MiMiAi</title>
 
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
+  <div id="app">
 
-<div id="app">
+    <header class="topbar">
+      <div class="logo">
+        <span>✦ MiMiAi</span>
+      </div>
 
-<header class="topbar">
+      <nav>
+        <button id="languageButton" type="button">
+          🌍 Dil
+        </button>
 
-<div class="logo">
-🌸 <span>MiMiAi</span>
-</div>
+        <button id="themeButton" type="button">
+          🎨 Tema
+        </button>
 
-<nav>
+        <button id="loginButton" type="button">
+          Giriş Yap
+        </button>
 
-<button>Dil</button>
+        <button id="registerButton" type="button">
+          Kayıt Ol
+        </button>
+      </nav>
+    </header>
 
-<button>Giriş Yap</button>
+    <main>
+      <section class="hero">
 
-<button>Kayıt Ol</button>
+        <p class="hero-badge">
+          ✨ Sana göre kişiselleştirilen yapay zekâ
+        </p>
 
-</nav>
+        <h1>
+          Merhaba, ben MiMiAi.
+        </h1>
 
-</header>
+        <p>
+          Öğrenmek, araştırmak, planlamak, üretmek ve günlük
+          sorunlarını çözmek için yanında olan sıcak, akıllı ve
+          güvenilir hayat asistanın.
+        </p>
 
-<section class="hero">
+        <div class="hero-actions">
+          <button id="startChatButton" type="button">
+            Sohbete Başla ✨
+          </button>
 
-<h1>Merhaba, ben MiMiAi 💜</h1>
+          <button id="exploreModesButton" type="button">
+            Modları Keşfet
+          </button>
+        </div>
 
-<p>
-Senin kişisel yapay zekâ arkadaşın.
-</p>
+        <div class="hero-tags">
+          <span>👩‍🏫 Öğretmen</span>
+          <span>🔬 Araştırma</span>
+          <span>🍝 Yemek</span>
+          <span>🎮 Oyun</span>
+          <span>🧰 Tamirat</span>
+          <span>🛡️ Güvenlik</span>
+        </div>
 
-<button>Sohbete Başla</button>
+      </section>
 
-</section>
+      <section class="modes-section" id="modes">
+        <div class="section-heading">
+          <p>MiMiAi dünyası</p>
+          <h2>İhtiyacına uygun modu seç</h2>
+        </div>
 
-</div>
+        <div class="mode-grid">
 
-<script src="scripts/app.js"></script>
+          <article class="mode-card">
+            <span>💬</span>
+            <h3>Normal Sohbet</h3>
+            <p>
+              Günlük sorular, fikirler ve samimi sohbetler.
+            </p>
+          </article>
 
+          <article class="mode-card">
+            <span>👩‍🏫</span>
+            <h3>Öğretmen</h3>
+            <p>
+              Yaşına ve seviyene uygun, anlaşılır anlatımlar.
+            </p>
+          </article>
+
+          <article class="mode-card">
+            <span>🔬</span>
+            <h3>Araştırma</h3>
+            <p>
+              Konuları güvenilir kaynaklarla ayrıntılı incele.
+            </p>
+          </article>
+
+          <article class="mode-card">
+            <span>🍝</span>
+            <h3>Yemek</h3>
+            <p>
+              Tarifler, menüler ve mutfakta adım adım yardım.
+            </p>
+          </article>
+
+          <article class="mode-card">
+            <span>🎮</span>
+            <h3>Oyun ve Eğlence</h3>
+            <p>
+              Quizler, hikâyeler, oyunlar ve komik sohbetler.
+            </p>
+          </article>
+
+          <article class="mode-card">
+            <span>🧰</span>
+            <h3>Tamirat Yardımcısı</h3>
+            <p>
+              Ev ve cihaz sorunlarında güvenli kontrol adımları.
+            </p>
+          </article>
+
+          <article class="mode-card">
+            <span>🛡️</span>
+            <h3>Güvenlik Yardımcısı</h3>
+            <p>
+              Şüpheli bağlantı, mesaj ve dolandırıcılık kontrolü.
+            </p>
+          </article>
+
+          <article class="mode-card">
+            <span>🎨</span>
+            <h3>Kişiselleştirme</h3>
+            <p>
+              Tema, renk, karakter, emoji ve mizah seviyeni seç.
+            </p>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created by Mira 💜</p>
+    </footer>
+
+  </div>
+
+  <script src="scripts/app.js"></script>
 </body>
 </html>
