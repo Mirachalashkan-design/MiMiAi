@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>MiMiAi | Giriş Yap</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <header class="topbar">
+      <div class="logo">
+        <span>✦ MiMiAi</span>
+      </div>
+
+      <nav>
+        <button
+          type="button"
+          onclick="window.location.href='index.html'"
+        >
+          Ana Sayfa
+        </button>
+
+        <button id="loginLanguageButton" type="button">
+          🌍 Dil
+        </button>
+
+        <button id="loginThemeButton" type="button">
+          🎨 Tema
+        </button>
+      </nav>
+    </header>
+
+    <main class="auth-page">
+
+      <section class="auth-card">
+
+        <div class="auth-intro">
+          <p class="hero-badge">
+            ✨ MiMiAi dünyasına hoş geldin
+          </p>
+
+          <h1 id="authTitle">
+            Giriş Yap
+          </h1>
+
+          <p id="authDescription">
+            Hesabına giriş yap ve kişiselleştirilmiş
+            MiMiAi deneyimine devam et.
+          </p>
+        </div>
+
+        <div class="social-login-buttons">
+
+          <button id="googleLoginButton" type="button">
+            <span>G</span>
+            Google ile devam et
+          </button>
+
+          <button id="appleLoginButton" type="button">
+            <span></span>
+            Apple ile devam et
+          </button>
+
+        </div>
+
+        <div class="auth-divider">
+          <span></span>
+          <p>veya e-posta kullan</p>
+          <span></span>
+        </div>
+
+        <form id="authForm">
+
+          <div
+            id="nameField"
+            class="auth-field hidden"
+          >
+            <label for="nameInput">
+              Adın
+            </label>
+
+            <input
+              id="nameInput"
+              type="text"
+              autocomplete="name"
+              placeholder="Adını yaz"
+            >
+          </div>
+
+          <div class="auth-field">
+            <label for="emailInput">
+              E-posta
+            </label>
+
+            <input
+              id="emailInput"
+              type="email"
+              autocomplete="email"
+              placeholder="ornek@email.com"
+              required
+            >
+          </div>
+
+          <div class="auth-field">
+            <label for="passwordInput">
+              Şifre
+            </label>
+
+            <div class="password-field">
+              <input
+                id="passwordInput"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Şifreni yaz"
+                required
+              >
+
+              <button
+                id="showPasswordButton"
+                type="button"
+                aria-label="Şifreyi göster"
+              >
+                👁️
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="birthdayField"
+            class="auth-field hidden"
+          >
+            <label for="birthdayInput">
+              Doğum tarihi
+            </label>
+
+            <input
+              id="birthdayInput"
+              type="date"
+            >
+          </div>
+
+          <div
+            id="countryField"
+            class="auth-field hidden"
+          >
+            <label for="countryInput">
+              Ülke
+            </label>
+
+            <select id="countryInput">
+              <option value="NL">Hollanda</option>
+              <option value="TR">Türkiye</option>
+              <option value="BG">Bulgaristan</option>
+              <option value="US">Amerika Birleşik Devletleri</option>
+              <option value="GB">Birleşik Krallık</option>
+              <option value="DE">Almanya</option>
+              <option value="FR">Fransa</option>
+              <option value="other">Diğer</option>
+            </select>
+          </div>
+
+          <div
+            id="languageField"
+            class="auth-field hidden"
+          >
+            <label for="languageInput">
+              Dil
+            </label>
+
+            <select id="languageInput">
+              <option value="tr">Türkçe</option>
+              <option value="en-US">English (US)</option>
+              <option value="en-GB">English (UK)</option>
+              <option value="nl">Nederlands</option>
+              <option value="bg">Български</option>
+              <option value="de">Deutsch</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
+
+          <div class="auth-options">
+
+            <label class="remember-option">
+              <input
+                id="rememberInput"
+                type="checkbox"
+              >
+
+              <span>Beni hatırla</span>
+            </label>
+
+            <button
+              id="forgotPasswordButton"
+              class="text-button"
+              type="button"
+            >
+              Şifremi unuttum
+            </button>
+
+          </div>
+
+          <button
+            id="submitAuthButton"
+            class="auth-submit-button"
+            type="submit"
+          >
+            Giriş Yap ✨
+          </button>
+
+        </form>
+
+        <div class="auth-switch">
+
+          <p id="switchQuestion">
+            Henüz hesabın yok mu?
+          </p>
+
+          <button
+            id="switchAuthModeButton"
+            class="text-button"
+            type="button"
+          >
+            Kayıt Ol
+          </button>
+
+        </div>
+
+        <p class="auth-security-note">
+          🔒 Bilgilerin iznin olmadan hafızaya kaydedilmez.
+        </p>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Created by Mira 💜</p>
+    </footer>
+
+  </div>
+
+  <script src="scripts/login.js"></script>
+</body>
+</html>
