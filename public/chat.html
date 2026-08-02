@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>MiMiAi Sohbet</title>
+
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <header class="topbar">
+      <div class="logo">
+        <span>✦ MiMiAi</span>
+      </div>
+
+      <nav>
+        <button
+          type="button"
+          onclick="window.location.href='index.html'"
+        >
+          Ana Sayfa
+        </button>
+
+        <button id="chatLanguageButton" type="button">
+          🌍 Dil
+        </button>
+
+        <button id="chatThemeButton" type="button">
+          🎨 Tema
+        </button>
+      </nav>
+    </header>
+
+    <main class="chat-page">
+
+      <aside class="chat-sidebar">
+        <h2>MiMi Modları</h2>
+
+        <button class="mode-button active" data-mode="normal">
+          💬 Normal Sohbet
+        </button>
+
+        <button class="mode-button" data-mode="teacher">
+          👩‍🏫 Öğretmen
+        </button>
+
+        <button class="mode-button" data-mode="research">
+          🔬 Araştırma
+        </button>
+
+        <button class="mode-button" data-mode="cooking">
+          🍝 Yemek
+        </button>
+
+        <button class="mode-button" data-mode="funny">
+          😂 Komik
+        </button>
+
+        <button class="mode-button" data-mode="game">
+          🎮 Oyun
+        </button>
+
+        <button class="mode-button" data-mode="repair">
+          🧰 Tamirat
+        </button>
+
+        <button class="mode-button" data-mode="safety">
+          🛡️ Güvenlik
+        </button>
+      </aside>
+
+      <section class="chat-container">
+
+        <div class="chat-header">
+          <div>
+            <p class="chat-small-title">
+              Şu an aktif mod
+            </p>
+
+            <h1 id="activeModeTitle">
+              💬 Normal Sohbet
+            </h1>
+          </div>
+
+          <button id="newChatButton" type="button">
+            + Yeni Sohbet
+          </button>
+        </div>
+
+        <div id="messages" class="messages">
+
+          <div class="message mimi-message">
+            <div class="message-avatar">
+              ✦
+            </div>
+
+            <div class="message-bubble">
+              Merhaba! Ben MiMiAi 💜
+              Bugün sana nasıl yardımcı olabilirim?
+            </div>
+          </div>
+
+        </div>
+
+        <div class="chat-input-area">
+
+          <div class="chat-tools">
+            <button type="button" title="Dosya ekle">
+              📎
+            </button>
+
+            <button type="button" title="Fotoğraf ekle">
+              📷
+            </button>
+
+            <button type="button" title="Sesli konuş">
+              🎙️
+            </button>
+          </div>
+
+          <textarea
+            id="messageInput"
+            rows="2"
+            placeholder="MiMiAi'ye bir şey yaz..."
+          ></textarea>
+
+          <button id="sendButton" type="button">
+            Gönder ✨
+          </button>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Created by Mira 💜</p>
+    </footer>
+
+  </div>
+
+  <script src="scripts/chat.js"></script>
+</body>
+</html>
