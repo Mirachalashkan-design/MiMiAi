@@ -1,22 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-  console.log("MiMiAi hazır 💜");
-
   const startChatButton = document.getElementById("startChatButton");
   const exploreModesButton = document.getElementById("exploreModesButton");
   const themeButton = document.getElementById("themeButton");
   const languageButton = document.getElementById("languageButton");
+  const loginButton = document.getElementById("loginButton");
+  const registerButton = document.getElementById("registerButton");
 
   startChatButton?.addEventListener("click", () => {
-    alert("Yakında gerçek MiMiAi sohbet ekranı açılacak. 💜");
+    window.location.href = "chat.html";
   });
 
   exploreModesButton?.addEventListener("click", () => {
-    document
-      .getElementById("modes")
-      ?.scrollIntoView({
-        behavior: "smooth"
-      });
+    document.getElementById("modes")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+
+  loginButton?.addEventListener("click", () => {
+    window.location.href = "login.html";
+  });
+
+  registerButton?.addEventListener("click", () => {
+    window.location.href = "login.html?mode=register";
   });
 
   themeButton?.addEventListener("click", () => {
@@ -24,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   languageButton?.addEventListener("click", () => {
-    alert("Çoklu dil sistemi yakında geliyor 🌍");
+    alert("Dil seçimi yakında geliyor 🌍");
   });
-
 });
